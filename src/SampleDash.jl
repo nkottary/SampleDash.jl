@@ -4,7 +4,7 @@ using Dash, DashHtmlComponents, DashCoreComponents
 
 function run_app(host="0.0.0.0", port=8080)
     app = dash(external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"],
-               requests_pathname_prefix=ENV["JRUN_APP_BASE_PATH"])
+               requests_pathname_prefix=get(ENV, "JRUN_APP_BASE_PATH", "/"))
     
     app.layout = html_div() do
         html_h1("Hello Dash"),

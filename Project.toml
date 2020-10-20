@@ -1,6 +1,6 @@
 name = "SampleDash"
 uuid = "c21cdcaf-0d93-4d92-8cdb-99636d8a79d4"
-version = "0.0.1"
+version = "0.0.2"
 
 [deps]
 Dash = "1b08a953-4be3-4667-9a23-3db579824955"
