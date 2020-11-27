@@ -3,6 +3,7 @@ module SampleDash
 using Dash, DashHtmlComponents, DashCoreComponents
 
 function run_app(host="0.0.0.0", port=8080)
+    @info("Initializing dash...")
     app = dash(external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"],
                requests_pathname_prefix=get(ENV, "JRUN_APP_BASE_PATH", "/"))
     
@@ -20,7 +21,8 @@ function run_app(host="0.0.0.0", port=8080)
             )
         )
     end
-    
+
+    @info("Starting server...")
     run_server(app, host, port)
 end
 
