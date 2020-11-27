@@ -1,6 +1,7 @@
 module SampleDash
 
 using Dash, DashHtmlComponents, DashCoreComponents
+import Main.@info
 
 function run_app(host="0.0.0.0", port=8080)
     @info("Initializing dash...")
