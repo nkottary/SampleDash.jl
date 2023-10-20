@@ -1,7 +1,11 @@
 name = "SampleDash"
 uuid = "c21cdcaf-0d93-4d92-8cdb-99636d8a79d4"
+authors = ["Nishanth H. Kottary"]
 version = "0.1.0"
 
 [deps]
 Dash = "1b08a953-4be3-4667-9a23-3db579824955"
-DashTable = "1b08a953-4be3-4667-9a23-f0e2ba4deb9a"
+
+[compat]
+julia = "1.9"
+Dash = "1.4"
